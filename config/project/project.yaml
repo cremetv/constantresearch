@@ -1,25 +1,13 @@
-dateModified: 1597675805
+dateModified: 1600458666
 email:
-  fromEmail: $SYSTEM_EMAIL
-  fromName: $SYSTEM_EMAIL_FROMNAME
-  replyToEmail: null
-  template: null
-  transportSettings:
-    encryptionMethod: ssl
-    host: $SYSTEM_EMAIL_HOSTNAME
-    password: $SYSTEM_EMAIL_PASSWORD
-    port: $SYSTEM_EMAIL_PORT
-    timeout: '10'
-    useAuthentication: '1'
-    username: $SYSTEM_EMAIL_USERNAME
-  transportType: craft\mail\transportadapters\Smtp
+  fromEmail: info@constantresearch.group
+  fromName: 'Constant Research Group'
+  transportType: craft\mail\transportadapters\Sendmail
 plugins:
   contact-form:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-    settings:
-      toEmail: $SYSTEM_EMAIL_REPLY
   contact-form-extensions:
     edition: standard
     enabled: true
@@ -28,8 +16,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-    settings:
-      honeypotParam: sweetJusticeMail
   image-optimize:
     edition: standard
     enabled: false
@@ -54,53 +40,12 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.1.1
-    settings:
-      description: ''
-      facebookAppId: ''
-      metaTemplate: ''
-      removeAlternateUrls: ''
-      robots:
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-      robotsTxt: "{# Sitemap URL #}\r\nSitemap: {{ url(seo.sitemapName ~ '.xml') }}\r\n\r\n{# Disallows #}\r\n{% if craft.app.config.env != 'production' %}\r\n\r\n{# Disallow access to everything when NOT in production #}\r\nUser-agent: *\r\nDisallow: /\r\n\r\n{% else %}\r\n\r\n{# Disallow access to cpresources/ when live #}\r\nUser-agent: *\r\nDisallow: /cpresources/\r\n\r\n{% endif %}"
-      sitemapLimit: '1000'
-      sitemapName: sitemap
-      socialImage: null
-      title:
-        -
-          __assoc__:
-            -
-              - key
-              - '1'
-            -
-              - locked
-              - '0'
-            -
-              - template
-              - '{title}'
-        -
-          __assoc__:
-            -
-              - key
-              - '2'
-            -
-              - locked
-              - '1'
-            -
-              - template
-              - ' | {{ siteName }}'
-      titleSuffix: null
-      twitterHandle: ''
 system:
   edition: solo
   live: true
-  name: 'SITENAME'
-  schemaVersion: 3.5.12
-  timeZone: Europe/Berlin
+  name: 'Constant Research Group'
+  schemaVersion: 3.5.13
+  timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
   defaultGroup: null

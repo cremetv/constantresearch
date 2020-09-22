@@ -1,0 +1,47 @@
+fieldLayouts:
+  29c3057f-f8cc-4535-bb36-b02ad29f05cc:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: b7ea7e0b-0642-4549-a3f3-9cf9d1bbcc5b
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: icons
+hasUrls: true
+name: Icons
+settings:
+  path: '@baseAssets/images/icons'
+sortOrder: 3
+type: craft\volumes\Local
+url: '@baseUrl/public/images/icons'

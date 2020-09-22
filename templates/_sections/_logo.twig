@@ -1,0 +1,12 @@
+{% set logo = companyInfos.logo.one() %}
+{% if logo|length %}
+  <div class="logo">
+    <a href="{{ siteUrl }}">
+      {% if logo.extension == 'svg' %}
+        {{ svg(logo) }}
+      {% else %}
+        <img src="{{ logo.url }}" alt="{{ siteName }} Logo">
+      {% endif %}
+    </a>
+  </div>
+{% endif %}

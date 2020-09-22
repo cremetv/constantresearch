@@ -29,7 +29,7 @@ return [
         'limitAutoSlugsToAscii' => true,
 
         'aliases' => [
-          '@baseUrl' => 'https://name.de',
+          '@baseUrl' => 'https://constantresearch.group',
           '@baseRoot' => dirname(__DIR__) . '/web',
           '@baseAssets' => '@baseRoot/public',
           '@staticAssetsVersion' => '0.0.1',
@@ -42,7 +42,7 @@ return [
         'devMode' => true,
 
         'aliases' => [
-          '@baseUrl' => 'http://name.test',
+          '@baseUrl' => 'http://constantresearch.test',
         ]
     ],
 
@@ -53,7 +53,7 @@ return [
         'allowUpdates' => false,
 
         'aliases' => [
-          '@baseUrl' => 'http://name.homepage-vorschau.com',
+          '@baseUrl' => 'http://constantresearch.group',
         ],
     ],
 
@@ -64,7 +64,7 @@ return [
         'allowUpdates' => false,
 
         'aliases' => [
-          '@baseUrl' => 'https://name.de'
+          '@baseUrl' => 'https://constantresearch.group'
         ],
     ],
 ];

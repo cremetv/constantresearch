@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: underConstruction
+name: 'under construction'
+propagationMethod: all
+siteSettings:
+  96e672a2-ad5c-4636-afb6-913fb5a59961:
+    enabledByDefault: true
+    hasUrls: true
+    template: home\_underconstruction
+    uriFormat: __home__
+type: single

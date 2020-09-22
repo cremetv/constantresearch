@@ -1,0 +1,18 @@
+fieldLayouts:
+  ce1eb3c3-2e7a-4669-bc5c-08b4fc3b6d5c:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: d0eccdda-7483-4596-b0d9-df4be3e1bd78
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: General
+        sortOrder: 1
+handle: companyInfos
+name: 'Company Infos'

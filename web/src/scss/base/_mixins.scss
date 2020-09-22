@@ -24,6 +24,13 @@
 }
 
 
+/* font weight */
+@mixin fw($fw) {
+  font-weight: var($fw);
+  font-variation-settings: 'wght' var($fw), 'slnt' 0;
+}
+
+
 /* z-index */
 @function z-index($name){
   $z: null;

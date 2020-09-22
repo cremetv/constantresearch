@@ -1,0 +1,35 @@
+{% extends '_layouts/_main' %}
+
+{% block bodyClass %}{{ entry.section.handle }}{% endblock %}
+
+{% block main %}
+
+  <main class="{{ entry.section.handle }}" data-barba="container" data-barba-namespace="{{ entry.section.handle }}">
+
+    <div class="content">
+      <h1>
+        <span>Something</span>
+        <span>will happen</span>
+        <span>here</span>
+      </h1>
+      <h2>
+        <span>&</span>
+        <span>you can</span>
+        <span>be part of it</span>
+      </h2>
+    </div>
+
+
+    <div class="image">
+      {% set image = craft.assets.filename('1C08CEE7D-9F04-4591-8F09-D1EB3F85262E.jpg').one() %}
+      {% if image|length %}
+        {% include '_components/_image' with {image: image, lazy: false} %}
+      {% endif %}
+    </div>
+
+
+    {% include '_sections/_logo' %}
+
+  </main>
+
+{% endblock %}
